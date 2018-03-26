@@ -1,0 +1,50 @@
+### Spring properties
+spring:
+  application:
+    name: helix-reach-microservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reach
+    username: postgres
+    password: Welcome1
+    platform: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: validate 
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false 
+      
+  
+
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 8080
+
+  
+#actuator configurations
+management: 
+  security:
+    enabled: false
+  
+ #Message Center configurations
+ #The details are subject to change on confirmation with product owner.
+starter:
+     swagger: 
+        basepackage: com.accenture.reach.messagecenter.controller
+        title: Reach Spring Boot Microservices
+        description: Microservice REST API for REACH Message-Center project
+        version: 1.0
+        terms-of-service-url: Terms of Service
+        contact:
+          name: REACH
+          url: http://www.accenture.com/us-en/company/
+          email: reachproduct@accenture.com
+        license: Accenture License Version 1.0
+        license-url: http://www.accenture.com
+        path: /messagecenter.*
+        groupname: messagecenter
+         
+    
