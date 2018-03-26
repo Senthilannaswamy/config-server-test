@@ -1,2 +1,6 @@
+logging:
+  level:
+    org:
+      springframework.*: DEBUG
 hello:
   name: config-server
