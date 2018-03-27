@@ -3,4 +3,4 @@ logging:
     org:
       springframework.*: DEBUG
 hello:
-  name: config-server-update-7
+  name: config-server-update-8
